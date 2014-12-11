@@ -1,8 +1,8 @@
 #! /bin/bash
 
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
-export DOCKER_HOST_IP=$(boot2docker ip 2>/dev/null)
-
+export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
+export DOCKER_HOST_IP=`netstat -nr | grep '^0\.\0\.0\.'| awk '{ print $2}'`
 export SPRING_DATA_MONGODB_URI=mongodb://${DOCKER_HOST_IP}/userregistration
 export SPRING_RABBITMQ_HOST=${DOCKER_HOST_IP}
-
+#export SPRING_RABBITMQ_HOST=localhost
+#export SPRING_RABBITMQ_PORT=5762
