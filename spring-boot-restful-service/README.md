@@ -23,7 +23,9 @@ And, send a registration request using:
     $ ./register-user.sh
     
 
-
+Some instructions for using VirtualBox / Ubuntu based docker host
+    
+    1) Add port forwarding for ports 8080,5762 and 127017 for the rest service , rabbitmq and mongodb ports respectively.
 
 
 
