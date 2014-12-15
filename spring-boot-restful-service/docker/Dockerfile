@@ -1,4 +1,4 @@
-FROM dockerfile/java:openjdk-7-jdk
+FROM dockerfile/java:openjdk-7-jre
 MAINTAINER tksukhu@gmail.com
 EXPOSE 8080
 CMD java -jar spring-boot-restful-service.jar
